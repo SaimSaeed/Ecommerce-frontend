@@ -26,10 +26,10 @@ function Cart() {
         <Row>
             <Col md={8}>
                 <h1 style={{ marginBottom: "20px" }}>Shopping Cart</h1>
-                <Link to={"/"} className='btn btn-light'>Go Back</Link>
+                <Link to={"/"} className='btn btn-light mb-2'>Go Back</Link>
                 {cartItems.length === 0 ?
                     (<Message>
-                        Your Cart is empty <Link to={"/"}>Go Back</Link>
+                        Your Cart is empty <Link to={"/"} style={{color:"#0d6efd",textDecoration:"underline"}}>Go Back</Link>
                     </Message>) :
                     (<ListGroup variant='flush'>
                         {
@@ -77,7 +77,7 @@ function Cart() {
                     ${cartItems.reduce((acc,item)=>acc += item.qty * item.price,0).toFixed(2)}
                 </ListGroup.Item>
                 <ListGroup.Item>
-                    <Button type='button' className='btn-block' disabled={cartItems.length === 0} onClick={checkoutHandler}>
+                    <Button type='button' variant='dark' className='btn-block' disabled={cartItems.length === 0} onClick={checkoutHandler}>
                    Proceed To Checkout
                     </Button>
                 </ListGroup.Item>

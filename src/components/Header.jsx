@@ -27,12 +27,12 @@ function Header() {
 
       <Navbar bg='dark' variant='dark' expand="md" collapseOnSelect >
         <Container>
-          <Navbar.Brand ><Link to={"/"} className='text-white'>ProShop</Link></Navbar.Brand>
+          <Navbar.Brand ><Link to={"/"} className='text-white'>Apparels Inc</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <SearchBox/>
-              <Nav.Link><Link to={"/cart"}><FaShoppingCart />{CartItem?.length > 0 &&
+              <Nav.Link><Link to={"/cart"} style={{color:"white"}}><FaShoppingCart />{CartItem?.length > 0 &&
                 <Badge pill bg='success' style={{marginLeft:"5px"}} >
     
                     {CartItem.reduce((a,c)=> a+= c.qty,0)}
@@ -48,7 +48,7 @@ function Header() {
               <NavDropdown.Item onClick={logoutHandler}>
                 Logout
               </NavDropdown.Item>
-            </NavDropdown>) :  (<Nav.Link><Link to={"/login"}><FaUser /> Sign In</Link></Nav.Link>)
+            </NavDropdown>) :  (<Nav.Link style={{color:"white"}} ><Link to={"/login"} style={{color:"white"}}><FaUser /> Sign In</Link></Nav.Link>)
               }
 
 {

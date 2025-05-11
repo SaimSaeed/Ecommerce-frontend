@@ -109,6 +109,7 @@ function SingleProduct() {
                                     <ListGroup.Item>
                                         <Button
                                             className='btn-block'
+                                            variant='dark'
                                             type='button'
                                             disabled={product.countInStock === 0} onClick={handleAddToCart}>
                                             Add To Cart

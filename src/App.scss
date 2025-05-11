@@ -39,3 +39,22 @@ a{
     bottom: 0;
     background: rgba(0,0,0,0.5);
 }
+
+
+/* Paginate.css */
+.custom-pagination .page-link {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  border: 1px solid var(--bs-secondary);
+}
+
+.custom-pagination .page-item.active .page-link {
+  color: white !important;
+  background-color: #222 !important;  /* Slightly different for active */
+  border-color: #666 !important;
+}
+
+.custom-pagination .page-link:hover {
+  background-color: #1a1a1a;
+  color: white;
+}

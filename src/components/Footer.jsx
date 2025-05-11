@@ -8,7 +8,7 @@ function Footer() {
     <footer>
   <Container>
         <Row>
-            <Col className=' text-center py-3'><p>ProShop &copy; {currentYear}</p></Col>
+            <Col className=' text-center py-3'><p>Apparels Inc &copy; {currentYear}</p></Col>
         </Row>
     </Container>
     </footer>

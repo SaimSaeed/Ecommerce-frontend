@@ -66,7 +66,7 @@ function Shipping() {
                     >
                     </Form.Control>
                 </Form.Group>
-                <Button type='Submit' variant='secondary' className='my-2'>Continue</Button>
+                <Button type='Submit' variant='dark' className='my-2'>Continue</Button>
             </Form>
         </FormContainer>
     )

@@ -46,7 +46,7 @@ function Payment() {
                         </Form.Check>
                     </Col>
 
-                    <Button type='submit' className='btn-secondary'>Continue</Button>
+                    <Button type='submit' variant='dark'>Continue</Button>
                 </Form.Group>
             </Form>
         </FormContainer>

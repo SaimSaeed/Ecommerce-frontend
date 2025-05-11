@@ -20,7 +20,7 @@ function Product({item}) {
         <Card.Text>
        ${item.price}
         </Card.Text>
-        <Button variant="primary">Add to Cart</Button>
+        <Button variant="dark">Add to Cart</Button>
       </Card.Body>
             </Link>
      

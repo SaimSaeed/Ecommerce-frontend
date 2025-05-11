@@ -104,7 +104,7 @@ function Profile() {
 
                         </Form.Control>
                     </Form.Group>
-                    <Button type='submit' variant='primary' className='my-2'>Update</Button>
+                    <Button type='submit' variant='dark' className='my-2'>Update</Button>
                     {loadingUpdateProfile && <Loader />}
                 </Form>
             </Col>
