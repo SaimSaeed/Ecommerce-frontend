@@ -32,11 +32,11 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <SearchBox/>
-              <Nav.Link><Link to={"/cart"} style={{color:"white"}}><FaShoppingCart />{CartItem?.length > 0 &&
-                <Badge pill bg='success' style={{marginLeft:"5px"}} >
-    
+              <Nav.Link style={{position:"relative"}} className='mx-2'><Link to={"/cart"} style={{color:"white"}}>
+                <FaShoppingCart />
+                {CartItem?.length > 0 &&
+                <Badge pill bg='secondary' style={{marginLeft:"5px"}} className="badge" >
                     {CartItem.reduce((a,c)=> a+= c.qty,0)}
-
                 </Badge>}
                 </Link>
               </Nav.Link>
@@ -51,7 +51,7 @@ function Header() {
             </NavDropdown>) :  (<Nav.Link style={{color:"white"}} ><Link to={"/login"} style={{color:"white"}}><FaUser /> Sign In</Link></Nav.Link>)
               }
 
-{
+            {
               
             userInfo && userInfo.isAdmin &&  (<NavDropdown title="Admin"  id="basic-nav-dropdown">
                 
